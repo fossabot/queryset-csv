@@ -58,6 +58,8 @@ Admin Action
 An action is provided for the Django admin site. There are 3 ways of including it:
 
 #. The function :code:`export_model_as_csv` can be added to your custom admin
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fintouch-smartwater%2Fqueryset-csv.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fintouch-smartwater%2Fqueryset-csv?ref=badge_shield)
+
     class's actions
 #. The :code:`CsvExporterAdmin` class can be inherited to provide the action
 #. Setting :code:`CSV_EXPORT_ADMIN_ACTION_AVAILABLE=True` in your django
@@ -73,6 +75,9 @@ Why create this code rather than use an existing CSV export project?
 #. Licensing - Other CSV export packages encountered are Licensed under the
     GNU GPL. The GPL is incompatible with the desired usage, so a this was
     written from scratch.
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fintouch-smartwater%2Fqueryset-csv.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fintouch-smartwater%2Fqueryset-csv?ref=badge_large)
+
 #. Functionality - Existing CSV packages are not designed to handle very large
     querysets, the option to steam querysets is essential for models with
     thousands of entries.
